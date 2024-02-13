@@ -1,7 +1,8 @@
 import express from "express"
 import { CategoryEndpoint, BookEndpoint  } from "./Endpoints/Index.js"
+import cors from 'cors'
+
 const app = express()
-var cors = require('cors')
 const port = 3000
 
 app.use(express.json())
